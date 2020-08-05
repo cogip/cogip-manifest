@@ -3,12 +3,12 @@
     <remote name="cogip" fetch="https://github.com/cogip"/>
     <remote name="riot" fetch="https://github.com/RIOT-OS"/>
  
-    <project name="mcu-firmware" remote="cogip" path="mcu-firmware" revision="master">
+    <project name="mcu-firmware" path="mcu-firmware" remote="cogip" revision="master" />
     
-    <project name="lidar-firmware" remote="cogip" path="lidar-firmware" revision="master">
+    <project name="lidar-firmware" path="lidar-firmware" remote="cogip" revision="master" />
     
-    <project name="simulation" remote="cogip" path="simulation" revision="master">
+    <project name="simulation" path="simulation" remote="cogip" revision="master" />
     
-    <project name="RIOT" remote="riot" path="RIOT" revision="refs/tags/2020.7">
+    <project name="RIOT" path="RIOT" remote="riot" revision="refs/tags/2020.07" />
     
 </manifest>
