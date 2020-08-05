@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="cogip" fetch="https://github.com/cogip"/>
+    <remote name="riot" fetch="https://github.com/RIOT-OS"/>
+ 
+    <project name="mcu-firmware" remote="cogip" path="mcu-firmware" revision="master">
+    
+    <project name="lidar-firmware" remote="cogip" path="lidar-firmware" revision="master">
+    
+    <project name="simulation" remote="cogip" path="simulation" revision="master">
+    
+    <project name="RIOT" remote="riot" path="RIOT" revision="refs/tags/2020.7">
+    
+</manifest>
