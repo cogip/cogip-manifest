@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="cogip" fetch="https://github.com/cogip"/>
-    <remote name="riot" fetch="https://github.com/RIOT-OS"/>
+    <remote name="cogip" alias="origin" fetch="https://github.com/cogip"/>
+    <remote name="riot" alias="origin" fetch="https://github.com/RIOT-OS"/>
  
     <project name="mcu-firmware" path="mcu-firmware" remote="cogip" revision="master" />
     
