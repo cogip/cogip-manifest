@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <!--List of remotes to use-->
     <remote name="cogip" alias="origin" fetch="https://github.com/cogip"/>
     <remote name="riot" alias="origin" fetch="https://github.com/RIOT-OS"/>
- 
-    <project name="mcu-firmware" path="mcu-firmware" remote="cogip" revision="master" />
+
+    <!--Cogip repositories-->
+    <project name="mcu-firmware"
+        path="mcu-firmware"
+        remote="cogip"
+        revision="master"
+        groups="cogip" />
     
-    <project name="lidar-firmware" path="lidar-firmware" remote="cogip" revision="master" />
+    <project name="lidar-firmware"
+        path="lidar-firmware"
+        remote="cogip"
+        revision="master"
+        groups="cogip" />
     
-    <project name="simulation" path="simulation" remote="cogip" revision="master" />
-    
-    <project name="RIOT" path="RIOT" remote="riot" revision="refs/tags/2020.07" />
+    <project name="simulation"
+        path="simulation"
+        remote="cogip"
+        revision="master"
+        groups="cogip" />
+
+    <project name="cogip-manifest"
+        path="manifest"
+        remote="cogip"
+        revision="master"
+        groups="cogip" />
+
+    <!--External repositories-->
+    <project name="RIOT"
+        path="RIOT"
+        remote="riot"
+        revision="refs/tags/2020.07"
+        clone-depth="1"
+        groups="riot" />
     
 </manifest>
