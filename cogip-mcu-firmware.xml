@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--List of remotes to use-->
+    <remote name="cogip" alias="origin" fetch="ssh://git@github.com/cogip"/>
+    <remote name="riot" alias="origin" fetch="ssh://git@github.com/RIOT-OS"/>
+
+    <!--Cogip repositories-->
+    <project name="mcu-firmware"
+        path="firmware/mcu-firmware"
+        remote="cogip"
+        revision="master"
+        groups="cogip" />
+    
+    <!--External repositories-->
+    <project name="RIOT"
+        path="firmware/RIOT"
+        remote="riot"
+        revision="refs/tags/2020.07"
+        clone-depth="1"
+        groups="riot" />
+    
+</manifest>
