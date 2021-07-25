@@ -12,6 +12,16 @@
         remote="cogip"
         revision="main"
         groups="cogip" />
+    <project name="meta-cogip-bsp"
+        path="yocto-build/layers/meta-cogip-bsp"
+        remote="cogip"
+        revision="main"
+        groups="cogip" />
+    <project name="meta-cogip-distro"
+        path="yocto-build/layers/meta-cogip-distro"
+        remote="cogip"
+        revision="main"
+        groups="cogip" />
 
     <!-- Yocto repositories -->
     <project name="poky"
