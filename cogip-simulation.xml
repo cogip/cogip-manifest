@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--List of remotes to use-->
+    <remote name="cogip" alias="origin" fetch="ssh://git@github.com/cogip"/>
+
+    <project name="simulation"
+        path="simulation"
+        remote="cogip"
+        revision="master"
+        groups="cogip"
+        sync-s="true" />
+</manifest>
