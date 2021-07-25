@@ -2,16 +2,28 @@
 <manifest>
     <!-- List of remotes to use -->
     <remote name="cogip" alias="origin" fetch="ssh://git@github.com/cogip"/>
-    <remote name="ptx" alias="origin" fetch="git://git.pengutronix.de"/>
     <remote name="riot" alias="origin" fetch="ssh://git@github.com/RIOT-OS"/>
     <remote name="yocto" alias="origin" fetch="git://git.yoctoproject.org"/>
 
     <!-- Cogip repositories -->
     <project name="yocto-build"
-        path="yocto-build"
+        path="pi"
         remote="cogip"
         revision="main"
         groups="cogip" />
+<<<<<<< HEAD
+=======
+    <project name="meta-cogip-bsp"
+        path="yocto-build/layers/meta-cogip-bsp"
+        remote="cogip"
+        revision="main"
+        groups="cogip" />
+    <project name="meta-cogip-distro"
+        path="yocto-build/layers/meta-cogip-distro"
+        remote="cogip"
+        revision="main"
+        groups="cogip" />
+>>>>>>> a5a9ebd... fix yocto-build
 
     <!-- Yocto repositories -->
     <project name="poky"
@@ -24,11 +36,19 @@
         remote="yocto"
         revision="dunfell"
         groups="yocto" />
+<<<<<<< HEAD
+=======
 
     <!-- 3rd party Yocto layers -->
+    <project name="meta-openembedded"
+        path="yocto-build/layers/meta-openembedded"
+        remote="oe"
+        revision="dunfell"
+        groups="yocto" />
     <project name="meta-ptx"
         path="yocto-build/layers/meta-ptx"
         remote="ptx"
         revision="dunfell"
         groups="yocto" />
+>>>>>>> a5a9ebd... fix yocto-build
 </manifest>
