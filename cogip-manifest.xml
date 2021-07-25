@@ -2,5 +2,6 @@
 <manifest>
     <!--List of sub-manifest -->
     <include name="cogip-mcu-firmware.xml" />
+    <include name="cogip-yocto.xml" />
     <include name="cogip-simulation.xml" />
 </manifest>

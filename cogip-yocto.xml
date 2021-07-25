@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- List of remotes to use -->
+    <remote name="cogip" alias="origin" fetch="ssh://git@github.com/cogip"/>
+    <remote name="riot" alias="origin" fetch="ssh://git@github.com/RIOT-OS"/>
+    <remote name="yocto" alias="origin" fetch="git://git.yoctoproject.org"/>
+
+    <!-- Cogip repositories -->
+    <project name="yocto-build"
+        path="yocto-build"
+        remote="cogip"
+        revision="main"
+        groups="cogip" />
+
+    <!-- Yocto repositories -->
+    <project name="poky"
+        path="yocto-build/layers/poky"
+        remote="yocto"
+        revision="dunfell"
+        groups="yocto" />
+    <project name="meta-raspberrypi"
+        path="yocto-build/layers/meta-raspberrypi"
+        remote="yocto"
+        revision="dunfell"
+        groups="yocto" />
+</manifest>
