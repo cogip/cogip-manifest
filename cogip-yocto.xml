@@ -2,6 +2,7 @@
 <manifest>
     <!-- List of remotes to use -->
     <remote name="cogip" alias="origin" fetch="ssh://git@github.com/cogip"/>
+    <remote name="oe" alias="origin" fetch="git://git.openembedded.org"/>
     <remote name="ptx" alias="origin" fetch="git://git.pengutronix.de"/>
     <remote name="riot" alias="origin" fetch="ssh://git@github.com/RIOT-OS"/>
     <remote name="yocto" alias="origin" fetch="git://git.yoctoproject.org"/>
@@ -36,6 +37,11 @@
         groups="yocto" />
 
     <!-- 3rd party Yocto layers -->
+    <project name="meta-openembedded"
+        path="yocto-build/layers/meta-openembedded"
+        remote="oe"
+        revision="dunfell"
+        groups="yocto" />
     <project name="meta-ptx"
         path="yocto-build/layers/meta-ptx"
         remote="ptx"
