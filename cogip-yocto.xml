@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- List of remotes to use -->
+    <remote name="cogip" alias="origin" fetch="ssh://git@github.com/cogip"/>
+    <remote name="oe" alias="origin" fetch="git://git.openembedded.org"/>
+    <remote name="ptx" alias="origin" fetch="git://git.pengutronix.de"/>
+    <remote name="riot" alias="origin" fetch="ssh://git@github.com/RIOT-OS"/>
+    <remote name="yocto" alias="origin" fetch="git://git.yoctoproject.org"/>
+
+    <!-- Cogip repositories -->
+    <project name="yocto-build"
+        path="yocto-build"
+        remote="cogip"
+        revision="main"
+        groups="cogip" />
+    <project name="meta-cogip-bsp"
+        path="yocto-build/layers/meta-cogip-bsp"
+        remote="cogip"
+        revision="main"
+        groups="cogip" />
+    <project name="meta-cogip-distro"
+        path="yocto-build/layers/meta-cogip-distro"
+        remote="cogip"
+        revision="main"
+        groups="cogip" />
+
+    <!-- Yocto repositories -->
+    <project name="poky"
+        path="yocto-build/layers/poky"
+        remote="yocto"
+        revision="dunfell"
+        groups="yocto" />
+    <project name="meta-raspberrypi"
+        path="yocto-build/layers/meta-raspberrypi"
+        remote="yocto"
+        revision="dunfell"
+        groups="yocto" />
+
+    <!-- 3rd party Yocto layers -->
+    <project name="meta-openembedded"
+        path="yocto-build/layers/meta-openembedded"
+        remote="oe"
+        revision="dunfell"
+        groups="yocto" />
+    <project name="meta-ptx"
+        path="yocto-build/layers/meta-ptx"
+        remote="ptx"
+        revision="dunfell"
+        groups="yocto" />
+</manifest>
